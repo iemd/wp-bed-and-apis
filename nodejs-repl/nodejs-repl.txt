@@ -1,0 +1,111 @@
+/**
+ * 1. Learn Node.js REPL (Workshop)
+ */
+node -> /workspaces/back-end-development-and-apis (main)$ script nodejs-repl.txt
+Script started on 2026-10-20 21:08:17+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="-1" LINES="-1"]
+
+node -> /workspaces/back-end-development-and-apis (main)$ cd learn-nodejs-repl
+
+node -> /workspaces/back-end-development-and-apis/learn-nodejs-repl (main)$ sudo apt install -y nodejs
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 19%
+                             
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+                                
+
+Reading state information... 0%
+
+Reading state information... 0%
+                                
+Error: Unable to locate package nodejs
+
+node -> /workspaces/back-end-development-and-apis/learn-nodejs-repl (main)$ node -v
+
+v24.18.0
+node -> /workspaces/back-end-development-and-apis/learn-nodejs-repl (main)$ npm -v
+
+11.16.0
+node -> /workspaces/back-end-development-and-apis/learn-nodejs-repl (main)$ 
+
+node -> /workspaces/back-end-development-and-apis/learn-nodejs-repl (main)$ node -e "console.log'Hello, Node'"
+
+Hello, Node
+node -> /workspaces/back-end-development-and-apis/learn-nodejs-repl (main)$ node -e "console.log2 + 2"
+
+4
+node -> /workspaces/back-end-development-and-apis/learn-nodejs-repl (main)$ node -p "typeof process"
+
+object
+node -> /workspaces/back-end-development-and-apis/learn-nodejs-repl (main)$ node -p "Math.PI.toFixed(4)"
+
+3.1416
+node -> /workspaces/back-end-development-and-apis/learn-nodejs-repl (main)$ echo "console.log('Hello from a file')" > hello.js
+
+node -> /workspaces/back-end-development-and-apis/learn-nodejs-repl (main)$ node --check hello.js
+
+node -> /workspaces/back-end-development-and-apis/learn-nodejs-repl (main)$ node hello.js
+
+Hello from a file
+node -> /workspaces/back-end-development-and-apis/learn-nodejs-repl (main)$ node 
+
+Welcome to Node.js v24.18.0.
+Type ".help" for more information.
+> 2 ** 8
+256
+
+> let city = "Paris"
+undefined
+
+> city
+'Paris'
+
+> 10 * 10
+100
+
+> _ + 5
+105
+
+> function double(n) { return n * 2; }
+undefined
+
+> double(21)
+42
+
+> const os = require("os")
+undefined
+
+> os.platform()
+linux
+
+> .help
+
+.break    Sometimes you get stuck, this gets you out
+.clear    Alias for .break
+.editor   Enter editor mode
+.exit     Exit the REPL
+.help     Print this help message
+.load     Load JS from a file into the REPL session
+.save     Save all evaluated commands in this REPL session to a file
+
+Press Ctrl+C to abort current expression, Ctrl+D to exit the REPL
+> .exit
+
+node -> /workspaces/back-end-development-and-apis/learn-nodejs-repl (main)$ echo "import { createRequire } from 'module'; console.log(typeof createRequire)" | node --input-type=module
+
+function
+node -> /workspaces/back-end-development-and-apis/learn-nodejs-repl (main)$ exit
+
+exit
+
+Script done on 2026-10-20 21:50:15+00:00 OMMAND_EXIT_CODE="0"]
